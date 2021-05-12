@@ -50,7 +50,7 @@ class MovieDetailActivity : AppCompatActivity() {
     }
 
     private fun setBookMovie() {
-       bookButton.setOnClickListener{
+       btnBook.setOnClickListener{
            val url = getString(R.string.web_url_book) + movieId
            try {
                val i = Intent(Intent.ACTION_VIEW)
@@ -99,14 +99,16 @@ class MovieDetailActivity : AppCompatActivity() {
                     .load(fullImageUrl)
                     .apply(RequestOptions.centerCropTransform())
                     .transition(DrawableTransitionOptions.withCrossFade())
-                    .into(imageView)
+                    .into(imgVPoster)
             }
         }
 
-        overviewTextView.text = movie.overview?.let { getOverview(it) }
-        genresTextView.text = getGenres(movie)
-        durationTextView.text = getDuration(movie)
-        languageTextView.text = getLanguages(movie)
+        tvoverview.text = movie.overview?.let { getOverview(it) }
+        tvGenres.text = getGenres(movie)
+        tvDuration.text = getDuration(movie)
+        tvLanguage.text = getLanguages(movie)
+
+
 
     }
 

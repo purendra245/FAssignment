@@ -22,7 +22,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imgVPoster"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/detailPosterHeight"
                 android:layout_weight="1"
@@ -45,7 +45,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/genresTextView"
+                    android:id="@+id/tvGenres"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
@@ -60,7 +60,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/durationTextView"
+                    android:id="@+id/tvDuration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
@@ -75,7 +75,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/languageTextView"
+                    android:id="@+id/tvLanguage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="English"/>
@@ -86,7 +86,7 @@
 
         <TextView
             android:layout_marginTop="16dp"
-            android:id="@+id/overviewHeader"
+            android:id="@+id/tvOverviewHeader"
             android:layout_below="@id/container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -96,8 +96,8 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:layout_below="@id/overviewHeader"
-            android:id="@+id/overviewTextView"
+            android:layout_below="@id/tvOverviewHeader"
+            android:id="@+id/tvoverview"
             android:layout_width="wrap_content"
             android:ellipsize="end"
             android:layout_height="wrap_content"
@@ -105,10 +105,10 @@
 
 
         <Button
-            android:id="@+id/bookButton"
+            android:id="@+id/btnBook"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/overviewTextView"
+            android:layout_below="@id/tvoverview"
             android:layout_marginTop="16dp"
             android:text="@string/book_the_movie_button"/>
 
